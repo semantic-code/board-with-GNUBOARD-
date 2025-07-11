@@ -61,13 +61,11 @@ $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
                     <?= editor_html('wr_content', $list['wr_content'], $is_dhtml_editor) ?>
                 </div>
             </div>
-
-
-            <?php if($is_file):?>
+            
             <?php $file = $list['file']; ?>
             <div class="file_wrap">
                 <h3>파일첨부</h3>
-                <?php for ($i = 0; $i < $file_count; $i++):?>
+                <?php for ($i = 0; $is_file && $i < $file_count; $i++):?>
                 <div class="form-row">
                     <input type="file" name="bf_file[]">
                     <div class="file-info">
@@ -84,7 +82,6 @@ $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
                 </div>
                 <?php endfor;?>
             </div>
-            <?php endif;?>
 
             <?php if ($is_use_captcha): //자동등록방지?>
             <div class="write_div">

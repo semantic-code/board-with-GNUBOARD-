@@ -29,9 +29,10 @@ $is_file = $board['bo_upload_count'] > 0;
 $file_count = $board['bo_upload_count'] ?? 0;
 //captcha
 $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
-
-
-
+if($is_use_captcha){
+    $captcha_html = captcha_html();
+    $captcha_js   = chk_captcha_js();
+}
 ?>
     <!-- css -->
     <link rel="stylesheet" href="/board/notice/style.css?ver=<?=time()?>">
@@ -61,7 +62,7 @@ $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
                     <?= editor_html('wr_content', $list['wr_content'], $is_dhtml_editor) ?>
                 </div>
             </div>
-            
+
             <?php $file = $list['file']; ?>
             <div class="file_wrap">
                 <h3>파일첨부</h3>
@@ -85,7 +86,7 @@ $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
 
             <?php if ($is_use_captcha): //자동등록방지?>
             <div class="write_div">
-                <?php echo captcha_html() ;?>
+                <?php echo $captcha_html ;?>
             </div>
             <?php endif; ?>
 
@@ -107,7 +108,7 @@ $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
             <?php echo chk_editor_js('wr_content', $is_dhtml_editor);?>
 
             //captcha
-            <?php echo chk_captcha_js() ;?>
+            <?php echo $captcha_js ;?>
 
             return true;
         }

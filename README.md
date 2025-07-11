@@ -14,5 +14,5 @@ write_update.php
 
   
 write_update.skin.php
-   -- if($custom_url) goto_url($custom_url);
+   - if($custom_url) goto_url($custom_url);
 

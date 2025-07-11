@@ -13,6 +13,8 @@ write_update.php
    - input hidden : name = w, value = u
 
   
-write_update.skin.php
+/skin/board/notice/write_update.skin.php
    - if($custom_url) goto_url($custom_url);
 
+/bbs/write_update.php
+   - 자동등록방지 숫자가 틀렸습니다. 경고창 부분 예외 처리

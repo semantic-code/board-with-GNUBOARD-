@@ -13,5 +13,5 @@ write_update.php
    - input hidden : name = w, value = u
   
 write_update.skin.php
-- if($custom_url) goto_url($custom_url);
+   - if($custom_url) goto_url($custom_url);
 

@@ -27,9 +27,9 @@ set_session("ss_write_{$bo_table}_token", $token);
 <div class="board-form">
     <h1 class="board-title">글쓰기</h1>
 
-    <form name="fwrite" id="fwrite" method="post" action="/bbs/write_update.php" enctype="multipart/form-data" onsubmit="return fwrite_submit(this);">
-        <input type="hidden" name="bo_table" value="<?= $bo_table ?>">
+    <form name="fwrite" id="fwrite" method="post" action="/bbs/write_update.php" enctype="multipart/form-data" onsubmit="return fwrite_submit(this);">        
         <input type="hidden" name="token" value="<?= $token ?>">
+        <input type="hidden" name="bo_table" value="<?= $bo_table ?>">
         <input type="hidden" name="return_url" value="/board/notice/?mode=list">
 
         <div class="form-row">

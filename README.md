@@ -11,6 +11,7 @@ write_update.php
    - input hidden : name = wr_id, value = 10
    - input hidden : name = board , value = 'notice'
    - input hidden : name = w, value = u
+
   
 write_update.skin.php
    - if($custom_url) goto_url($custom_url);

@@ -30,7 +30,7 @@ set_session("ss_write_{$bo_table}_token", $token);
     <form name="fwrite" id="fwrite" method="post" action="/bbs/write_update.php" enctype="multipart/form-data" onsubmit="return fwrite_submit(this);">        
         <input type="hidden" name="token" value="<?= $token ?>">
         <input type="hidden" name="bo_table" value="<?= $bo_table ?>">
-        <input type="hidden" name="return_url" value="/board/notice/?mode=list">
+        <input type="hidden" name="custom_url" value="/board/notice/?mode=list">
 
         <div class="form-row">
             <label for="wr_name">이름</label>

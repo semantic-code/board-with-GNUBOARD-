@@ -18,3 +18,5 @@ write_update.php
 
 /bbs/write_update.php
    - 자동등록방지 숫자가 틀렸습니다. 경고창 부분 예외 처리
+
+https://oocooc.mycafe24.com/bbs/password.php?w=u&bo_table=notice&wr_id=39&page=

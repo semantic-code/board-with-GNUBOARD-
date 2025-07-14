@@ -80,9 +80,9 @@ if($is_use_captcha){
                         </label>
                     </span>
                     <?php endif;?>
-                    </div>
                 </div>
-                <?php endfor;?>
+            </div>
+            <?php endfor;?>
             </div>
 
             <?php if ($is_use_captcha): //자동등록방지?>

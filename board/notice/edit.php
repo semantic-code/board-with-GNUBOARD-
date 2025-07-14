@@ -75,7 +75,7 @@ if($is_use_captcha){
                     <span>파일명 : <?= $file[$i]['source'] ?></span>
                     <span class="file-delete">
                         <label>
-                            <input type="checkbox" name="bf_file_del[0]" value="1">
+                            <input type="checkbox" name="bf_file_del[<?= $i ?>]" value="1">
                             <span>삭제</span>
                         </label>
                     </span>

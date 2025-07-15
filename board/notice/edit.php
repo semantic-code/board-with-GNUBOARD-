@@ -91,7 +91,7 @@ if($is_use_captcha){
             <?php endif; ?>
 
             <div class="delete-button">
-                <a href="/bbs/delete.php?w=u&bo_table=<?= $bo_table ?>&wr_id=<?= $list['wr_id'] ?>&token=<?= $_SESSION['ss_delete_token']?>" onclick="del(this.href); return false;">삭제</a>
+                <a href="/bbs/delete.php?w=u&bo_table=<?= $bo_table ?>&wr_id=<?= $list['wr_id'] ?>&token=<?= $_SESSION['ss_delete_token']?>" onclick="del(this.href); return false;">글 삭제</a>
             </div>
 
             <div class="form-row submit-row">

@@ -1,0 +1,253 @@
+/* === 공통 === */
+body {
+    font-family: 'Malgun Gothic', sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.board-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-list {
+    background: #eee;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.btn-list:hover {
+    background: #ddd;
+}
+
+.btn-write, .btn-submit {
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+.btn-write:hover, .btn-submit:hover {
+    background: #555;
+}
+
+.paging {
+    padding-top: 1rem;
+}
+
+.btn-area {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+/* === 공통 폼 요소 === */
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    margin-bottom: 0;
+}
+
+.form-row label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: block;
+    padding: 0.6rem;
+    margin-bottom: .5rem;
+}
+
+/* === 글쓰기 폼 === */
+.board-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === 수정 폼 === */
+.board-edit {
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.board-edit .submit-row {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+/* === 첨부파일 표시 === */
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.file-delete {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* === 목록 페이지 === */
+.board-list {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.board-table th,
+.board-table td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.board-table th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.board-table .subject {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.board-table a {
+    text-decoration: none;
+    color: #333;
+}
+
+.board-table a:hover {
+    text-decoration: underline;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+}
+
+/* === 보기 페이지 === */
+.board-view {
+    width: 100%;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.board-view .view-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.board-view .view-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.board-view .view-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+    white-space: pre-line;
+}
+
+.board-view .view-file {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.board-view .view-file p {
+    margin-bottom: .5rem;
+}
+
+.board-view .view-file a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* === 버튼 정렬 === */
+.submit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.left-buttons {
+    flex: 1;
+    text-align: left;
+}
+
+.center-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.delete-button {
+    margin-top: 1rem;
+}
+
+.delete-button a {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}

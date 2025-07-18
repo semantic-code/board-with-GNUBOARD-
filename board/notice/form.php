@@ -20,6 +20,10 @@ include_once (G5_PATH.'/head.php');
 $token = get_token();
 set_session("ss_write_{$bo_table}_token", $token);
 
+// 토큰을 생성해서 ss_write_{$bo_table}_token 에 저장
+//$token = get_write_token($bo_table);
+
+
 // wr_name
 $wr_name = $member['mb_name'] ?? '';
 

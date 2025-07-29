@@ -16,6 +16,9 @@ write_update.php
 /skin/board/notice/write_update.skin.php
    - if($custom_url) goto_url($custom_url);
 
+/skin/board/notice/delete.tail.skin.php
+   - if($custom_delete_url) goto_url($custom_delete_url);
+
 /bbs/write_update.php
    - 자동등록방지 숫자가 틀렸습니다. 경고창 부분 예외 처리
 

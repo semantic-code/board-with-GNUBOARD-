@@ -20,8 +20,6 @@ write_update.php
    - if($custom_delete_url) goto_url($custom_delete_url);
 
 /bbs/write_update.head.skin.php 생성
-   <?php
-   if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
-   
-   //커스텀시 '자동등록방지 숫자가 틀렸습니다.' 안 나오도록 예외처리
-   if(in_array($bo_table, array('contact'))) $is_guest = false;
+   - if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+   - 커스텀시 '자동등록방지 숫자가 틀렸습니다.' 안 나오도록 예외처리
+   - if(in_array($bo_table, array('contact'))) $is_guest = false;

@@ -12,7 +12,7 @@ $file_count = $board['bo_upload_count'] ?? 0;
 $is_use_captcha = $board['bo_use_captcha'] && !is_mobile() ? 1 : 0;
 
 $sub_menu = 200100;
-include_once (G5_EDITOR_PATH."/{$board['bo_select_editor']}/editor.lib.php");
+include_once (G5_EDITOR_LIB);
 include_once(G5_CAPTCHA_PATH . '/captcha.lib.php');
 
 include_once (G5_PATH.'/head.php');
@@ -108,3 +108,4 @@ print_r2($_SESSION);
 
 <?php
 include_once(G5_PATH.'/tail.php');
+

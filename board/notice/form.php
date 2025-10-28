@@ -23,6 +23,8 @@ set_session("ss_write_{$bo_table}_token", $token);
 // 토큰을 생성해서 ss_write_{$bo_table}_token 에 저장
 //$token = get_write_token($bo_table);
 
+set_session('ss_bo_table', $bo_table);
+set_session('ss_wr_id', $wr_id ?? 0);
 
 // wr_name
 $wr_name = $member['mb_name'] ?? '';
@@ -108,4 +110,5 @@ print_r2($_SESSION);
 
 <?php
 include_once(G5_PATH.'/tail.php');
+
 
